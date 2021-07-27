@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+      background: #C5E4E7;
+    }
+
+    #logo{
+      position: absolute;
+      width: 87px;
+      height: 54px;
+      left: 640px;
+      top: 57px;
+
+    }
+
+    .container{
+      position: absolute;
+      width: 995px;
+      height: 467px;
+      left: 50%;
+      top: 130.5px;
+      transform: translateX(-50%);
+      background: #FFFFFF;
+      border-radius: 29px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .input-container{
+      width: 50%;
+      padding: 10px;
+    }
+
+    .bill-input > p, .tip-select > p{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 28px;
+      color: #00494D;
+      margin-left: 35px;
+      font-family: 'Space Mono', monospace;
+      color: #00494D;
+    }
+
+    #bill-input{
+      width: 430px;
+      height: 34px;
+      border-radius: 10px;
+      border: 0px;
+      background: rgba(197, 226, 231, 0.6) url('images/icon-dollar.svg')no-repeat left;
+      margin-left: 30px;
+      text-align: right;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 21px;
+      color: #00494D;
+      font-family: 'Space Mono', monospace;
+    }
+
+    input[type='text']:focus{
+      outline: none;
+    }
+
+    .tip-select{
+      margin-top: 40px;
+    }
+
+    .select{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 20px;
+    }
+
+    .select > button{
+      width: 100px;
+      height: 30px;
+      margin: 5px 20px;
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      background: #00494D;
+      color: white;
+      border: 0px;
+      border-radius: 4px;
+    }
+
+    .select > input{
+      width: 100px;
+      height: 30px;
+      margin: 5px 20px;
+      border-radius: 4px;
+      border: 0px;
+      background: rgba(197, 226, 231, 0.6);
+      color: #00494D;
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .select > button:hover{
+      background-color: #C5E4E7;
+      color: #00494D;
+    }
+
+    .select > input::placeholder{
+      color: #00494D;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .people-count{
+      margin-left: 30px;
+      margin-top: 40px;
+    }
+
+    .people-count > p{
+      font-family: 'Space Mono', monospace;
+      color: #00494D;
+      display: inline;
+    }
+
+    .people-count > span{
+      margin-left: 142px;
+      font-family: 'Space Mono', monospace;
+      color: red;
+    }
+
+    .people-count > input{
+      width: 430px;
+      height: 34px;
+      border-radius: 10px;
+      border: 0px;
+      background: rgba(197, 226, 231, 0.6) url('images/icon-person.svg')no-repeat left;
+      text-align: right;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 21px;
+      color: #00494D;
+      font-family: 'Space Mono', monospace;
+    }
+
+    .output{
+      width: 50%;
+      background: #00494D;
+      margin: 10px;
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    .tip, .total{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .tip-label > p, .total-label > p{
+      color: white;
+      font-family: 'Space Mono', monospace;
+    }
+
+    .tip-label > span, .total-label > span{
+      color:hsl(184, 14%, 56%);
+      font-family: 'Space Mono', monospace;
+    }
+
+    .tip-amount > p{
+      margin-left: 191px;
+    }
+
+    .total-amount > p{
+      margin-left: 167px;
+    }
+
+    .tip-amount >p, .total-amount > p{
+      font-weight: 700;
+      font-size: 30px;
+      color: hsl(172, 67%, 45%);
+      font-family: 'Space Mono', monospace;
+    }
+
+    .output > button{
+      width: 358px;
+      height: 40px;
+      margin-left: 30px;
+      border: 0px;
+      border-radius: 7px;
+      margin-top: 130px;
+      background-color:hsl(186, 14%, 43%);
+    }
+
+    .output > button:hover{
+      background-color: #C5E4E7;
+    }
+    .attribution { 
+      position: relative;
+      text-align: center; 
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+      bottom: 0px;
+    }
+  </style>
+</head>
+<body>
+  <img id='logo' src="images/logo.svg" alt="logo">
+
+  <div class="container">
+    <div class="input-container">
+      <section class="input">
+        <div class="bill-input">
+          <p>Bill</p>
+          <input id="bill-input" type="text">
+        </div>
+      </section>
+  
+      <div class="tip-select">
+        <p>Select Tip %</p>
+        <div class="select">
+          <button id='bt1'>5%</button>
+          <button id='bt2'>10%</button>
+          <button id='bt3'>15%</button>
+          <button id='bt4'>25%</button>
+          <button id='bt5'>50%</button>
+          <input type="text" placeholder="Custom" id="custom-input">
+        </div>
+      </div>
+
+      <div class="people-count" id='people-count'>
+        <p>Number of People</p>
+        <input type="text" id='count'>
+      </div>
+    </div>
+
+    <div class="output">
+      <div class="tip">
+        <div class="tip-label">
+          <p>Tip Amount</p>
+          <span>/ person</span>
+        </div>
+
+        <div class="tip-amount">
+          <p id="tip-amount">$0.00</p>
+        </div>
+      </div>
+
+      <div class="total">
+        <div class="total-label">
+          <p>Total Amount</p>
+          <span>/ person</span>
+        </div>
+
+        <div class="total-amount">
+          <p id ="total-amount">$0.00</p>
+        </div>
+      </div>
+
+      <button id="reset">RESET</button>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rakesh Rebbavarapu</a>.
+  </div>
+ 
+</body>
+<script src="script.js"></script>
+</html>
