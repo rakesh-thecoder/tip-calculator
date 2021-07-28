@@ -12,7 +12,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -40,4 +39,14 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-# tip-calculator
+
+
+### What I learned
+Well, this is my first project which made to focus on javascript. I don't use js much, but this project help me to learn a lot 
+
+### Author
+ Website - [Rakesh Rebbavarapu](https://rakesh-thecoder.netlify.app)
+- Frontend Mentor - [@rakesh-deevep](https://www.frontendmentor.io/profile/rakesh-devep)
+- Twitter - [@rakesh-thecoder](https://www.twitter.com/rakesh-thecoder)
+
+### Acknowledgements
