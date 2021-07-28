@@ -154,7 +154,7 @@
     }
 
     .output{
-      width: 50%;
+      width: 394px;
       background: #00494D;
       margin: 10px;
       border-radius: 20px;
@@ -182,7 +182,7 @@
     }
 
     .total-amount > p{
-      margin-left: 167px;
+      margin-left: 170px;
     }
 
     .tip-amount >p, .total-amount > p{
@@ -212,6 +212,110 @@
     .attribution a { 
       color: hsl(228, 45%, 44%); 
       bottom: 0px;
+    }
+
+    @media (max-width: 412px){
+        #logo{
+          left:  134px;
+          top: 34px;
+        }
+
+        .container{
+          width: 100%;
+          height: 87%;
+          top: 91.5px;
+          flex-direction: column;
+          overflow: hidden;
+        }
+
+        .input-container{
+          width: 100%;
+        }
+
+        .bill-input p{
+          font-size: 16px;
+          margin-top: -4px;
+        }
+
+        #bill-input{
+          width: 273px;
+          margin-top: -6px;
+        }
+
+        .tip-select p{
+          font-size: 17px;
+          margin-top: -24px;
+          margin-bottom: 5px;
+        }
+
+        .select > button{
+          margin-left: 10px;
+          height: 34px;
+          margin-top: 2px;
+        }
+
+        .select > input{
+          margin-left: 9px;
+        }
+
+        .output{
+            width: 73%;
+            margin: 20px;
+            height: 113px;
+            margin-top: 5px;
+        }
+
+        .people-count{
+          margin-top: 0px;
+        }
+
+        .people-count > input{
+          width: 273px;
+        }
+
+        .tip-label > p, .total-label > p{
+          margin-top: -15px;
+          margin-left: -12px;
+          margin-bottom: 0px;
+          font-size: 14px;
+        }
+
+        .tip-label > span, .total-label > span{
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+
+        .tip-amount > P, .total-amount > p{
+          font-size: 22px;
+        }
+
+        .total-label > p{
+          margin-top: 12px;
+        }
+
+        .tip-amount > p{
+          margin-top: -7px;
+          margin-left: 123px;
+        }
+
+        .total-amount > p{
+            margin-left: 123px;
+        }
+
+        .total-label > p {
+            margin-top: -11px;
+        }
+
+        .output > button{
+          width: 290px;
+          height: 31px;
+          margin-left: -12px;
+          margin-top: -2px;
+        }
+
+        .attribution{
+          font-size: 12px;
+        }
     }
   </style>
 </head>
@@ -275,7 +379,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Rakesh Rebbavarapu</a>.
+    Coded by <a href="rakesh-thecoder.netlify.app">Rakesh Rebbavarapu</a>.
   </div>
  
 </body>
