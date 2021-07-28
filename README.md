@@ -30,8 +30,8 @@ Users should be able to:
 ![](./screenshot.jpg)
 
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/rakesh-thecoder/tip-calculator)
+- Live Site URL: [Add live site URL here](https://frontend-tip-calculator.netlify.app/)
 
 ## My process
 
