@@ -320,14 +320,14 @@
   </style>
 </head>
 <body>
-  <img id='logo' src="images/logo.svg" alt="logo">
+  <img role="logo" id='logo' src="images/logo.svg" alt="logo">
 
-  <div class="container">
+  <div role="main-container" class="container">
     <div class="input-container">
       <section class="input">
         <div class="bill-input">
           <p>Bill</p>
-          <input id="bill-input" type="text">
+          <label><input id="bill-input" type="text"></label>
         </div>
       </section>
   
@@ -339,13 +339,13 @@
           <button id='bt3'>15%</button>
           <button id='bt4'>25%</button>
           <button id='bt5'>50%</button>
-          <input type="text" placeholder="Custom" id="custom-input">
+          <label><input type="text" placeholder="Custom" id="custom-input"></label>
         </div>
       </div>
 
       <div class="people-count" id='people-count'>
         <p>Number of People</p>
-        <input type="text" id='count'>
+        <label><input type="text" id='count'><label>
       </div>
     </div>
 
@@ -377,7 +377,7 @@
   </div>
 
 
-  <div class="attribution">
+  <div role="attribution" class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="rakesh-thecoder.netlify.app">Rakesh Rebbavarapu</a>.
   </div>
