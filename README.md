@@ -48,7 +48,7 @@ Well, this is my first project which made to focus on javascript. I don't use js
  Website - [Rakesh Rebbavarapu](https://rakesh-thecoder.netlify.app)
 - Frontend Mentor - [@rakesh-devep](https://www.frontendmentor.io/profile/rakesh-devep)
 - Twitter - [@rakesh_thecoder](https://www.twitter.com/rakesh_thecoder)
-- Instagram - [@theamigoooooo](https://www.instagram.com/theamigoooooo]
+- Instagram - [@theamigoooooo](https://www.instagram.com/theamigoooooo)
 - Linkedin - [@rakesh_thecoer](https://www.linkedin.com/rakesh-thecoder)
 
 ### Acknowledgements
