@@ -31,7 +31,7 @@ Users should be able to:
 
 
 - Solution URL: (https://github.com/rakesh-thecoder/tip-calculator)
-- Live Site URL: [Add live site URL here](https://frontend-tip-calculator.netlify.app/)
+- Live Site URL: (https://frontend-tip-calculator.netlify.app/)
 
 ## My process
 
