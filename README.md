@@ -49,6 +49,6 @@ Well, this is my first project which made to focus on javascript. I don't use js
 - Frontend Mentor - [@rakesh-devep](https://www.frontendmentor.io/profile/rakesh-devep)
 - Twitter - [@rakesh_thecoder](https://www.twitter.com/rakesh_thecoder)
 - Instagram - [@theamigoooooo](https://www.instagram.com/theamigoooooo)
-- Linkedin - [@rakesh_thecoder](https://www.linkedin.com/rakesh-thecoder)
+- Linkedin - [@rakesh_thecoder](https://www.linkedin.com/in/rakesh-thecoder)
 
 ### Acknowledgements
